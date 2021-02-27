@@ -1,0 +1,38 @@
+version: '3.7'
+services:
+  mc-rlcraft:
+    image: itzg/minecraft-server:java8
+    restart: on-failure
+    container_name: mc-rlcraft
+    hostname: mc-rlcraft
+    ports:
+      - "25565:25565"
+    volumes:
+      - "./data:/data"
+    environment:
+      OVERRIDE_SERVER_PROPERTIES: "true"
+      SERVER_NAME: "PTK RLCraft communist server"
+      MOTD: "PTK RLCraft communist server"
+      ICON: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hammer_and_sickle.svg/1024px-Hammer_and_sickle.svg.png"
+      EULA: "TRUE"
+      VERSION: "1.12.2"
+      TYPE: "FORGE"
+      FORGEVERSION: "14.23.5.2838"
+      GENERIC_PACK: "https://media.forgecdn.net/files/2935/323/RLCraft+Server+Pack+1.12.2+-+Beta+v2.8.2.zip"
+      ENABLE_QUERY: "true"
+      SNOOPER_ENABLED: "true"
+      MEMORY: 10G
+      DIFFICULTY: "hard"
+      MAX_PLAYERS: 16
+      MAX_WORLD_SIZE: 100000
+      MAX_TICK_TIME: -1
+      VIEW_DISTANCE: 8
+      LEVEL_TYPE: default
+      ALLOW_FLIGHT: "true"
+      PVP: "true"
+      ONLINE_MODE: "true"
+      OPS: "Sr_Mendoza,Sandytxu"
+      SPAWN_PROTECTION: 32
+      TZ: "Europe/Madrid"
+
+
