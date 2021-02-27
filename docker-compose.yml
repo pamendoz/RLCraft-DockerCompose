@@ -11,9 +11,9 @@ services:
       - "./data:/data"
     environment:
       OVERRIDE_SERVER_PROPERTIES: "true"
-      SERVER_NAME: "PTK RLCraft communist server"
-      MOTD: "PTK RLCraft communist server"
-      ICON: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hammer_and_sickle.svg/1024px-Hammer_and_sickle.svg.png"
+      SERVER_NAME: "SERVER NAME"
+      MOTD: "SERVER MOTD"
+      ICON: "ICON PATH OR URL"
       EULA: "TRUE"
       VERSION: "1.12.2"
       TYPE: "FORGE"
@@ -31,8 +31,8 @@ services:
       ALLOW_FLIGHT: "true"
       PVP: "true"
       ONLINE_MODE: "true"
-      OPS: "Sr_Mendoza,Sandytxu"
+      OPS: "OP1,OP2"
       SPAWN_PROTECTION: 32
-      TZ: "Europe/Madrid"
+      TZ: "INSERT TIMEZONE STRING HERE"
 
 
